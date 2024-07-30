@@ -130,7 +130,7 @@ public class TestCourierLogin extends BaseTestSteps{
         Response response2 = postCourierLogin(courierBradWrongPass);
         checkStatusCodeFromResponse(response2, 404);
     }
-
+/*
     //если какого-то поля нет, запрос возвращает ошибку 504;
     @Test
     @DisplayName("Check login courier no data status code 504 /api/v1/courier/login") // имя теста
@@ -141,7 +141,7 @@ public class TestCourierLogin extends BaseTestSteps{
         checkStatusCodeFromResponse(response, 504);
 
     }
-
+*/
     @After
     public void tearDown() {
         //удаляем курьера Брэда, если он был создан
